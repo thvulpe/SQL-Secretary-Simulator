@@ -1,29 +1,25 @@
-Theodor Vulpe - 315CB
+# University Assignment: Database Management System (315CB)  
+**Author**: Theodor Vulpe  
+**Course**: Programare (Programming)  
+**Assignment Link**: [Tema 3 - CBD (Database Operations)](https://ocw.cs.pub.ro/courses/programare/teme_2024/tema3_2024_cbd)  
 
-Task 1.1
+## 📖 Overview  
+This project implements a simple **database management system** in C, capable of handling student records, course enrollments, and grades. Key features include:  
+- **CRUD operations** (Create, Read, Update, Delete) for students, courses, and enrollments.  
+- **Querying** with conditional filters (e.g., list students with grades above a threshold).  
+- **Data encryption** via XOR operations (Task 3).  
 
-Citesc linie cu linie din fisierul de intrare si procesez in cate o functie separata pentru studenti, materii, inrolari sirul de caractere, actualizand baza de date.
-Media generala o actualizez la final, cand citirea a luat sfarsit, pentru a sti cu exactitate numarul de inrolari ale fiecarui student.
+## 🛠️ Implementation Details  
 
-Task 1.2
+### 📂 Task 1: Database Initialization  
+- **1.1**: Reads input files line-by-line, parsing data into structured tables (students, courses, enrollments). General averages are updated after all enrollments are processed.  
+- **1.2**: Adds students to the database and increments the student count.  
+- **1.3**: Fixed memory management issues (e.g., setting pointers to `NULL` after freeing).  
 
-Adaug in baza de date studentul, iar apoi incrementez numarul de studenti.
+### 🔍 Task 2: Query System  
+- **2.1**: Processes query instructions by splitting input strings into tokens and routing to appropriate functions.  
+  - **2.1.2 & 2.1.3**: Implements conditional checks (e.g., filters for grades, courses) using a vector of conditions.  
+- **2.2**: Updates general averages dynamically when enrollments are modified.  
 
-Task 1.3
-
-M-am confruntat cu problema ca nu dadeam variabilei valoarea NULL dupa eliberarea memoriei.
-
-Task 2.1
-
-Procesez linia instructiunii si o impart in mai multe siruri de caractere. Apoi am mai multe ramuri pe care se intra in functie de instructiune si se da outputul dorit.
-
-Am implementat task 2.1.2 si 2.1.3 concomitent, intrucat citesc conditiile impuse intr-un vector de conditii si verific respectarea tuturor conditiilor impuse la query-ul din baza de date.
-
-Task 2.2
-
-Folosesc aceleasi functii de impunere a conditiilor ca la taskurile anterioare.
-In urma unei modificari, ma asigur sa actualizez si mediile generale pentru situatia in care au fost modificate inrolarile.
-
-Task 3
-
-Urmez structura pseudocodului din enunt, lucrand pe void* si char* acolo unde aplic operatia XOR.
+### 🔒 Task 3: XOR Encryption  
+- Follows the pseudocode provided in the assignment, operating on `void*` and `char*` buffers to perform XOR encryption/decryption.  
