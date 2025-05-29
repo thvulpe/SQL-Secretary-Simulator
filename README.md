@@ -1,4 +1,4 @@
-# University Assignment: Database Management System (315CB)  
+# University Assignment: Database Management System
 **Author**: Theodor Vulpe  
 **Course**: PCLP1 (Programming)  
 **Assignment Link**: [Tema 3 - CBD (Database Operations)](https://ocw.cs.pub.ro/courses/programare/teme_2024/tema3_2024_cbd)  
